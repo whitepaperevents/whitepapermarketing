@@ -156,7 +156,7 @@
                 Connect with more prospects, book more meetings, and generate more sales.<br><br>
             </p>
 
-            <div style="display: none" class="code-button">Enter your Code
+            <div style="display: _none" class="code-button"><span id="redirect-msg">Enter your Code</span>
                 <div class="code-form">
                     <input type="text" id="code1" name="code" placeholder="Your Code">
                     <input type="text" id="best-email1" name="code" placeholder="Your Best Email">
@@ -319,6 +319,13 @@
             xhr.open("POST", url, true);
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
             xhr.send(u);
+
+            document.querySelector('#redirect-msg').innerHTML = "You will be redirected in 5 seconds to our sponsor";
+
+            setTimeout(function() {
+                window.location.replace(successpage);
+            }, 5000);
+
         }
 
         var buttons = document.querySelectorAll('.code-button');
