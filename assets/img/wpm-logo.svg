@@ -47,7 +47,8 @@
      d="M 76.908723,26.516875 C 72.255797,16.464483 56.044632,21.814439 60.166082,34.868468 62.377856,41.359897 66.87335,44.237756 76.907949,51.475725 86.943708,44.237756 91.437655,41.359123 93.650202,34.868468 97.769718,21.814439 81.560487,16.464483 76.908723,26.516875 Z"
      stroke="none"
      fill="#d41717"
-     stroke-width="0.386809" />
+     stroke-width="0.386809"
+     style="fill:#ffffff;fill-opacity:1" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
