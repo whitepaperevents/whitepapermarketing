@@ -2731,12 +2731,51 @@
         <p style="border-bottom: 3px solid;">
             <span style="text-align: left;"><a style="text-decoration: none;cursor: default;" href="">Appointment setting</a></span>
         </p>
+        <style>
+            #mauticform_wrapper_whitepapermarketingonboarding {
+                display: none;
+            }
+            
+            #mauticform_wrapper_whitepapermarketing {
+                max-width: 100%;
+            }
+            
+            .mauticform-button.btn-default,
+            .mautic-pagebreak-next,
+            .mautic-pagebreak-back {
+                padding: 20px !important;
+                font-size: 22px !important;
+                font-family: unset;
+            }
+            
+            #mauticform_whitepapermarketing_submit {
+                padding: 0px !important;
+            }
+            
+            #mauticform_input_whitepapermarketing_f_message {
+                height: 250px;
+            }
+            
+            #mauticform_input_whitepapermarketingonboarding_next1 {
+                width: 49.5%;
+            }
+            
+            #mauticform_input_whitepapermarketingonboarding_who_do_you_want_to_contac {
+                height: 400px !important;
+            }
+        </style>
+        <br>
+        <br>
 
+        <script type="text/javascript" src="//sales.leadspod.co/form/generate.js?id=4"></script>
 
         <!-- display: flex;-->
-        <article style="display: none; justify-content: center; padding: 30px;">
-            <button id="show-tour" style="max-width: 400px;" type="submit">Start Onboarding</button>
+        <article style="display: flex; justify-content: center; padding: 30px;">
+            <!--            <button id="show-tour" style="max-width: 400px;" type="submit">Start Onboarding</button>-->
+            <button id="show-onboarding-form" style="max-width: 400px;" type="submit">Start Onboarding</button>
         </article>
+
+
 
 
         <br>
@@ -2770,22 +2809,7 @@
             <li>Never miss a lead – a centralised database means no lead or enquiry gets forgotten.</li>
         </ul>
         <br><br>
-        <style>
-            #mauticform_wrapper_whitepapermarketing {
-                max-width: 100%;
-            }
-            
-            #mauticform_whitepapermarketing_submit {
-                padding: 0px !important;
-            }
-            
-            .mauticform-button-wrapper,
-            .mauticform-button.btn-default {
-                padding: 20px !important;
-                font-size: 22px !important;
-                font-family: unset;
-            }
-        </style>
+
         <span style="float: left; font-size: 2em; font-weight: bold; padding-bottom: 30px;">Contact</span>
         <br><br><br><br>
         <script type="text/javascript" src="//sales.leadspod.co/form/generate.js?id=3"></script>
@@ -2833,7 +2857,15 @@
         function displayTour() {
             document.getElementById("slider-wrapper").style.display = "flex";
         }
-        document.getElementById("show-tour").addEventListener("click", displayTour);
+        //document.getElementById("show-tour").addEventListener("click", displayTour);
+
+        function displayOnboardingForm() {
+            document.getElementById("mauticform_wrapper_whitepapermarketingonboarding").style.display = "block";
+        }
+
+        document.getElementById("show-onboarding-form").addEventListener("click", displayOnboardingForm);
+
+
 
         function closeTour() {
             document.getElementById("slider-wrapper").style.display = "none";
